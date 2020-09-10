@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibrate</title>
 </head>
-<body>
+<body style="color: #757E8A; font-family: Verdana, Geneva, Tahoma, sans-serif;">
     <script>
         function vibrateOnce(ms){
             navigator.vibrate(ms);
@@ -16,6 +16,8 @@
     </script>
     <button onclick="vibrateOnce(500)">Vibrate Once</button>
     <button onclick="vibrateOnce([300, 200, 300, 200, 300])">Vibrate Multiple</button>
-    <h1>This will work only on mobile, And this will not supported in safari browser!</h1>
+    <div >
+        <h3>This will work only on mobile, And this will not supported in safari browser!</h3>
+    </div>
 </body>
 </html>
