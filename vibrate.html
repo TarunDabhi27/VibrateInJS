@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrate</title>
+</head>
+<body>
+    <script>
+        function vibrateOnce(ms){
+            navigator.vibrate(ms);
+        }
+        function vibrateMultipleTime(msArr){
+            navigator.vibrate(msArr);
+        }
+    </script>
+
+    <button onclick="vibrateOnce(500)">Vibrate Once</button>
+    <button onclick="vibrateOnce([300, 200, 300, 200, 300])">Vibrate Multiple</button>
+</body>
+</html>
